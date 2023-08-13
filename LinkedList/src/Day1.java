@@ -18,6 +18,7 @@ Problem Constraints
 1 <= size of linked list <= 105
 
 1 <= value of nodes <= 109
+https://www.scaler.com/academy/mentee-dashboard/class/89290/assignment/problems/30649?navref=cl_tt_nv
 */
         public void solve(ListNode A) {
 
