@@ -74,5 +74,66 @@ public class Day1 {
             return head;
         }
     }
+    /*****************************************---------Q3-----------*****************************/
+/**
+ *
+ * Q3. Class Circle
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ *
+ *
+ * Construct a class Circle that represents a Circle.
+ *
+ * The class should support the following functionalities:-
+ *
+ * perimeter() -> returns the perimeter of the circle
+ * area() -> returns the area of the circle
+ *
+ * Note: Assume Π (pi) = 3.14 for calculations.
+ *
+ * Input Format:
+ *
+ * First argument A is an integer representing the number of testcases.
+ * For each case, the radius r is taken as input in new line.
+ * Output Format:
+ *
+ * The perimeter and area of the constructed circle is printed.
+ *
+ * */
+
+///https://www.scaler.com/academy/mentee-dashboard/class/89290/assignment/problems/27007/?navref=cl_pb_nv_tb
+    class Circle {
+        // Define properties here
+
+        float r;
+        // Define constructor here
+        public Circle(int r){
+            this.r=r;
+        }
+
+
+        float perimeter(){
+            // Complete the function
+            return 2*3.14f*(float)r;
+
+        }
+
+        float area(){
+            // Complete the function
+            return 3.14f*r*r;
+
+        }
+    }
+
+/*
+    Circle a = new Circle(3)  // Radius = 3
+	a.perimeter() // 18.84
+    a.area() // 28.26
+*/
+
+
 
 }
