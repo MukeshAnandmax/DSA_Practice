@@ -133,6 +133,76 @@ public class Day1 {
 	a.perimeter() // 18.84
     a.area() // 28.26
 */
+    /*****************************************---------Q4-----------*****************************/
+
+/**
+ *Q4. Class Rectangle
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ *
+ * Construct a class Rectangle that represents a rectangle.
+ *
+ * The class should support the following functionalities:-
+ *
+ * perimeter() -> returns the perimeter of the rectangle
+ * area() -> returns the area of the rectangle
+ * Input format:
+ *
+ * First argument A is an integer representing the number of testcases.
+ * For each case, x (length) and y (breadth) are taken as input in new line.
+ * Output format:
+ *
+ * The perimeter and area of the constructed rectangle are printed.
+ * */
+//https://www.scaler.com/academy/mentee-dashboard/class/89290/assignment/problems/27176/?navref=cl_pb_nv_tb
+    class Rectangle {
+        // Define properties here
+        int l;
+        int r;
+
+        // Define constructor here
+        public Rectangle(int l, int r){
+            this.l=l;
+            this.r=r;
+
+        }
+
+
+        int perimeter(){
+            // Complete the function
+
+            return 2*(l+r);
+
+        }
+
+        int area(){
+            // Complete the function
+            return l*r;
+
+        }
+    }
+
+/*
+    Rectangle a = new Rectangle(2, 3)  // Length = 2, Breadth = 3
+	a.perimeter() // Should give 10
+    a.area() // Should give 6
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
