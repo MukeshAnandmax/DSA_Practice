@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Day1 {
-/******************************************Q1***************************************************/
+/******************************************---Q1----***************************************************/
 /***
  * Q1. Inorder Traversal
  * Solved
@@ -59,6 +59,54 @@ public class Day1 {
 
 
     }
+/******************************************---Q2----***************************************************/
+/**
+ *
+ *Q2. Preorder Traversal
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ * Given a binary tree, return the preorder traversal of its nodes values.
+ *
+ *
+ *
+ * Problem Constraints
+ * 1 <= number of nodes <= 105
+ *
+ * */
+//https://www.scaler.com/academy/mentee-dashboard/class/89300/assignment/problems/222?navref=cl_tt_nv
+
+
+
+public class Solution1 {
+    public ArrayList<Integer> preorderTraversal(TreeNode A) {
+
+        ArrayList<Integer> res = new ArrayList<Integer>();
+
+        res = preorderTraversal1(A,res);
+
+        return res;
+
+    }
+    public ArrayList<Integer> preorderTraversal1(TreeNode A,ArrayList<Integer> res) {
+
+
+        if(A==null){
+            return res;
+        }
+
+        res.add(A.val);
+        res = preorderTraversal1( A.left,res);
+        res = preorderTraversal1( A.right,res);
+
+        return res;
+
+    }
+
+}
+
 
 
 }
