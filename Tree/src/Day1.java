@@ -200,5 +200,46 @@ public class Solution1 {
         }
     }
 
+    /******************************************---Q5----***************************************************/
+
+    /**
+     *Q5. Nodes Count
+     * Solved
+     * feature icon
+     * Using hints is now penalty free
+     * Use Hint
+     * Problem Description
+     * You are given the root node of a binary tree A. You have to find the number of nodes in this tree.
+     *
+     *
+     *
+     * Problem Constraints
+     * 1 <= Number of nodes in the tree <= 105
+     *
+     * 0 <= Value of each node <= 107
+     * */
+//https://www.scaler.com/academy/mentee-dashboard/class/89300/assignment/problems/11755?navref=cl_tt_nv
+
+    public class Solution4 {
+        public int solve(TreeNode A) {
+
+
+
+            if(A==null){
+                return 0;
+            }
+
+            int l = solve(A.left);
+            int r = solve(A.right);
+
+            return l+r+1;
+
+
+        }
+
+
+    }
+
+
 
 }
