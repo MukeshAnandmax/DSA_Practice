@@ -1,4 +1,52 @@
 public class Day1 {
+    /******************************************---Q1----***************************************************/
+/**
+ * Q1. tolower()
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ * You are given a function to_lower() which takes a character array A as an argument.
+ *
+ * Convert each character of A into lowercase characters if it exists. If the lowercase of a character does not exist, it remains unmodified.
+ * The uppercase letters from A to Z are converted to lowercase letters from a to z respectively.
+ *
+ * Return the lowercase version of the given character array.
+ *
+ *
+ *
+ * Problem Constraints
+ * 1 <= |A| <= 105
+ *
+ * */
+
+//https://www.scaler.com/academy/mentee-dashboard/class/89288/assignment/problems/10696?navref=cl_tt_lst_sl
+
+public class Solution1 {
+    public char[] to_lower(char[] A) {
+
+        for(int i=0;i<A.length;i++){
+
+            if(A[i]>='A'&& A[i]<='Z'){
+                A[i] = (char)(A[i]+32);
+            }
+        }
+        return A;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+    /******************************************---Q7----***************************************************/
 
 /***
  * Q7. Longest Palindromic Substring
@@ -24,7 +72,7 @@ public class Day1 {
  *
  * */
 //https://www.scaler.com/academy/mentee-dashboard/class/89288/assignment/problems/185/?navref=cl_pb_nv_tb
-    public class Solution {
+    public class Solution7 {
         public String longestPalindrome(String A) {
 
             String res =""+A.charAt(0);
