@@ -239,6 +239,36 @@ public class Solution1 {
 
 
     }
+    /******************************************---Q6----***************************************************/
+
+    /**
+     * Q6. Sum of nodes of a Binary Tree
+     * Solved
+     * feature icon
+     * Using hints is now penalty free
+     * Use Hint
+     * Problem Description
+     * Given the root of a binary tree A. Return the sum of all the nodes of the binary tree.
+     *
+     *
+     * Problem Constraints
+     * 1 <= Number of nodes in A <= 104
+     *
+     * 1 <= value of each node <= 104
+     * */
+    //https://www.scaler.com/academy/mentee-dashboard/class/89300/assignment/problems/31046?navref=cl_tt_nv
+
+    public class Solution5 {
+        public int solve(TreeNode A) {
+
+            if(A==null){
+                return 0;
+            }
+
+            return A.val+solve(A.left)+solve(A.right);
+
+        }
+    }
 
 
 
