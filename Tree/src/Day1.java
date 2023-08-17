@@ -161,8 +161,44 @@ public class Solution1 {
 
         }
     }
+/******************************************---Q4----***************************************************/
 
 
+    /**
+     *
+     * Q4. Tree Height
+     * Solved
+     * feature icon
+     * Using hints is now penalty free
+     * Use Hint
+     * Problem Description
+     * You are given the root node of a binary tree A. You have to find the height of the given tree.
+     *
+     * A binary tree's height is the number of nodes along the longest path from the root node down to the farthest leaf node.
+     *
+     *
+     *
+     * Problem Constraints
+     * 1 <= Number of nodes in the tree <= 105
+     *
+     * 0 <= Value of each node <= 109
+     * */
+//https://www.scaler.com/academy/mentee-dashboard/class/89300/assignment/problems/11757?navref=cl_tt_nv
+
+
+    public class Solution3 {
+        public int solve(TreeNode A) {
+
+            if(A==null){
+                return 0;
+            }
+
+            int lh = solve(A.left);
+            int rh= solve(A.right);
+
+            return Math.max(lh,rh)+1;
+        }
+    }
 
 
 }
