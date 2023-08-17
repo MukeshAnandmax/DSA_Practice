@@ -106,6 +106,62 @@ public class Solution1 {
     }
 
 }
+/******************************************---Q3----***************************************************/
+
+/**
+ * Q3. Postorder Traversal
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ * Given a binary tree, return the Postorder traversal of its nodes values.
+ *
+ *
+ *
+ * Problem Constraints
+ * 1 <= number of nodes <= 105
+ * */
+//https://www.scaler.com/academy/mentee-dashboard/class/89300/assignment/problems/229?navref=cl_tt_nv
+
+    /**
+     * Definition for binary tree
+     * class TreeNode {
+     *     int val;
+     *     TreeNode left;
+     *     TreeNode right;
+     *     TreeNode(int x) {
+     *      val = x;
+     *      left=null;
+     *      right=null;
+     *     }
+     * }
+     */
+    public class Solution2 {
+        public ArrayList<Integer> postorderTraversal(TreeNode A) {
+
+            ArrayList<Integer> res = new ArrayList<Integer>();
+            res = postorderTraversal1(A, res);
+            return res;
+
+        }
+
+
+        public ArrayList<Integer> postorderTraversal1(TreeNode A, ArrayList<Integer> res) {
+
+
+            if(A==null){
+                return res;
+            }
+
+            res = postorderTraversal1(A.left, res);
+            res = postorderTraversal1(A.right, res);
+            res.add(A.val);
+            return res;
+
+        }
+    }
+
 
 
 
