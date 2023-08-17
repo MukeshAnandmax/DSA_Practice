@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Day1 {
 /******************************************Q1***************************************************/
 /***
@@ -16,18 +18,18 @@ public class Day1 {
  * */
 //https://www.scaler.com/academy/mentee-dashboard/class/89300/assignment/problems/214?navref=cl_tt_lst_sl
     /**
-     * Definition for binary tree
-     * class TreeNode {
-     *     int val;
-     *     TreeNode left;
-     *     TreeNode right;
-     *     TreeNode(int x) {
-     *      val = x;
-     *      left=null;
-     *      right=null;
-     *     }
-     * }
-     */
+     * Definition for binary tree*/
+      class TreeNode {
+          int val;
+          TreeNode left;
+          TreeNode right;
+          TreeNode(int x) {
+          val = x;
+          left=null;
+           right=null;
+          }
+      }
+
     public class Solution {
         public ArrayList<Integer> inorderTraversal(TreeNode A) {
 
