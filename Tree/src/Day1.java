@@ -269,6 +269,54 @@ public class Solution1 {
 
         }
     }
+    /******************************************---HW Q1----***************************************************/
+
+    /**
+     * Q1. Sum of Left Leaves
+     * Solved
+     * feature icon
+     * Using hints is now penalty free
+     * Use Hint
+     * Problem Description
+     *
+     * Given a binary tree, find and return the sum of node value of all left leaves in it.
+     *
+     *
+     *
+     * Problem Constraints
+     *
+     * 1 <= number of nodes <= 5 * 105
+     *
+     * 1 <= node value <= 105
+     * */
+
+    //https://www.scaler.com/academy/mentee-dashboard/class/89300/homework/problems/11878/?navref=cl_pb_nv_tb
+
+    public class Solution6 {
+        public int solve(TreeNode A) {
+
+
+            if(A==null){
+                return 0;
+            }
+
+            if(A.left==null){
+                return solve(A.right);
+            }
+
+            int res =0;
+            if(A.left.left==null&& A.left.right==null){
+                res = A.left.val;
+            }
+            res+= solve(A.left);
+            res+= solve(A.right);
+
+
+            return res;
+
+        }
+    }
+
 
 
 
