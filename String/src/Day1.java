@@ -35,11 +35,46 @@ public class Solution1 {
         return A;
     }
 }
+    /******************************************---Q2----***************************************************/
+
+
+/***
+ *
+ * Q2. toupper()
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ * You are given a function to_upper() consisting of a character array A.
+ *
+ * Convert each character of A into Uppercase character if it exists. If the Uppercase of a character does not exist, it remains unmodified.
+ * The lowercase letters from a to z is converted to uppercase letters from A to Z respectively.
+ *
+ * Return the uppercase version of the given character array.
+ *
+ *
+ *
+ * Problem Constraints
+ * 1 <= |A| <= 105
+ * */
+//https://www.scaler.com/academy/mentee-dashboard/class/89288/assignment/problems/10697?navref=cl_tt_lst_sl
+
+public class Solution {
+    public char[] to_upper(char[] A) {
+
+        for(int i=0;i<A.length;i++){
+
+            if(A[i]>='a'&& A[i]<='z'){
+                A[i] = (char)(A[i]-32);
+            }
+        }
+        return A;
 
 
 
-
-
+    }
+}
 
 
 
