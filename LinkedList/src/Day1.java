@@ -1,14 +1,13 @@
 public class Day1 {
 
 
-    /**
-     * Definition for singly-linked list.
-     * class ListNode {
-     * public int val;
-     * public ListNode next;
-     * ListNode(int x) { val = x; next = null; }
-     * }
-     */
+    //  Definition for singly-linked list.
+      class ListNode {
+      public int val;
+      public ListNode next;
+      ListNode(int x) { val = x; next = null; }
+      }
+
 
     /*****************************************---------Q1-----------*****************************/
 
@@ -194,10 +193,54 @@ public class Day1 {
 
 
 
+    /*****************************************---------HW-Q1-----------*****************************/
 
 
+/**
+ * Q1. K-th element in linked list
+ * Solved
+ * feature icon
+ * Using hints is now penalty free
+ * Use Hint
+ * Problem Description
+ * You are given the head of a linked list A and an integer B. You need to find the B-th element of the linked list and return its value.
+ *
+ * Note : Follow 0-based indexing for the node numbering.
+ *
+ *
+ *
+ * Problem Constraints
+ * 1 <= size of linked list <= 105
+ *
+ * 1 <= value of nodes <= 109
+ *
+ * 0 <= B < size of linked list
+ * */
+
+//https://www.scaler.com/academy/mentee-dashboard/class/89290/homework/problems/30666/?navref=cl_pb_nv_tb
+
+    /**
+     * Definition for singly-linked list.
+     * class ListNode {
+     *     public int val;
+     *     public ListNode next;
+     *     ListNode(int x) { val = x; next = null; }
+     * }
+     */
+    public class Solution {
+        public int solve(ListNode A, int B) {
+
+            if(B==0){
+                return A.val;
+            }
 
 
+            return solve(A.next,B-1);
+
+        }
+
+
+    }
 
 
 
