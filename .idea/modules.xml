@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DSA_Practice.iml" filepath="$PROJECT_DIR$/DSA_Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day1-Intermediate DSA- Introduction to Problem Solving/Day1-Intermediate DSA- Introduction to Problem Solving.iml" filepath="$PROJECT_DIR$/Day1-Intermediate DSA- Introduction to Problem Solving/Day1-Intermediate DSA- Introduction to Problem Solving.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hashing/Hashing.iml" filepath="$PROJECT_DIR$/Hashing/Hashing.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day1-Intermediate DSA- Introduction to Problem Solving/Notes/Notes.iml" filepath="$PROJECT_DIR$/Day1-Intermediate DSA- Introduction to Problem Solving/Notes/Notes.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursion/Recursion.iml" filepath="$PROJECT_DIR$/Recursion/Recursion.iml" />

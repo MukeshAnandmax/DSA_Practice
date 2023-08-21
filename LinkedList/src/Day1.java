@@ -227,7 +227,7 @@ public class Day1 {
      *     ListNode(int x) { val = x; next = null; }
      * }
      */
-    public class Solution {
+    public class SolutionH1 {
         public int solve(ListNode A, int B) {
 
             if(B==0){
