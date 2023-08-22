@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class Day2 {
 
-/***************************************--Q1--**********************************************************/
+/*************************************************************--Q1--*****************************************************************/
     /***
      *
      * Q1. Count Pair Sum
@@ -48,6 +48,67 @@ public class Day2 {
             return count;
         }
     }
+
+    /*************************************************************--Q2--*****************************************************************/
+
+    /***
+     *
+     *Q2. Subarray Sum Equals K
+     * Solved
+     * feature icon
+     * Using hints is now penalty free
+     * Use Hint
+     * Problem Description
+     * Given an array of integers A and an integer B.
+     * Find the total number of subarrays having sum equals to B.
+     *
+     *
+     * Problem Constraints
+     *  1 <= length of the array <= 50000
+     * -1000 <= A[i] <= 1000
+     *
+     * */
+
+    //https://www.scaler.com/academy/mentee-dashboard/class/89279/assignment/problems/4827/?navref=cl_pb_nv_tb
+
+    public class Solution2 {
+        public int solve(int[] A, int B) {
+
+            int[] psum = new int[A.length];
+            HashMap<Integer,Integer> hm = new HashMap<>();
+            int count=0;
+
+            psum[0] =A[0];
+            for(int i=1;i<A.length;i++){
+
+                psum[i]= psum[i-1]+A[i];
+
+            }
+
+            for(int i=0;i<A.length;i++){
+
+                if(psum[i]==B){
+                    count++;
+
+                }
+                if(hm.containsKey(psum[i]-B)){
+
+                    count+=hm.get(psum[i]-B);
+                }
+
+                hm.put(psum[i], hm.getOrDefault(psum[i],0)+1);
+
+            }
+            return count;
+        }
+    }
+
+
+
+
+
+
+
 
 
 }
