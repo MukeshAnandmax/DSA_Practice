@@ -2,7 +2,7 @@ package AdityaVerma;
 
 import java.util.Arrays;
 
-public class Knapsack01 {
+public class Knapsack_01_Memoization {
         static int[][] dp;
         //Function to return max value that can be put in knapsack of capacity W.
         static int knapSack(int W, int wt[], int val[], int N)
