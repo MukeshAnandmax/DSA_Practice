@@ -3,7 +3,7 @@ package AdityaVerma;
 import java.util.Arrays;
 
 public class Longest_repeating_subsequence {
-    
+
         int[][]dp;
         public int LongestRepeatingSubsequence(String str)
         {
