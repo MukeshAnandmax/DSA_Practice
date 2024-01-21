@@ -2,7 +2,7 @@ package AdityaVerma;
 
 import java.util.Arrays;
 
-public class Longest_Common_Subsequence {
+public class Longest_Common_Subsequence_Memoization {
 
         //Function to find the length of longest common subsequence in two strings.
         static int[][]dp;
