@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DP/DP.iml" filepath="$PROJECT_DIR$/DP/DP.iml" />
       <module fileurl="file://$PROJECT_DIR$/DSA_Practice.iml" filepath="$PROJECT_DIR$/DSA_Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day1-Intermediate DSA- Introduction to Problem Solving/Day1-Intermediate DSA- Introduction to Problem Solving.iml" filepath="$PROJECT_DIR$/Day1-Intermediate DSA- Introduction to Problem Solving/Day1-Intermediate DSA- Introduction to Problem Solving.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hashing/Hashing.iml" filepath="$PROJECT_DIR$/Hashing/Hashing.iml" />
