@@ -23,7 +23,7 @@ public class Best_Time_to_Buy_and_Sell_Stock {
         }
 
     /***************************Approach 2*********************************************/
-    public int maxProfit(int[] prices) {
+    public int maxProfit1(int[] prices) {
 
         int minTN =Integer.MAX_VALUE;
         int profit =0;
